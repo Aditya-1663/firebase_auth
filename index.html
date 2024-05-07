@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<div class="bg-zinc-800 text-white min-h-screen p-4">
+    <div class="max-w-7xl mx-auto">
+        <header class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold">LO <span class="bg-blue-600 px-2 py-1 rounded">GO</span></div>
+            <button class="bg-blue-600 px-4 py-2 rounded text-white">Sign Out</button>
+        </header>
+        <h2 class="text-3xl font-bold py-4">Popular Topics 🔥</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-zinc-700 p-4 rounded-lg">
+                <div class="flex flex-col items-center">
+                    <img src="./rocket.png"  height="100" width="100" alt="Rocket Science" class="mb-4">
+                    <h3 class="text-xl font-semibold">Introduction to Rocket Science</h3>
+                    <p class="text-sm text-zinc-300 my-2">
+                        Covers fundamentals, design, construction, operation and programming of robots.
+                    </p>
+                    <button class="mt-auto bg-blue-600 px-4 py-2 rounded text-white">READ</button>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-700 p-4 rounded-lg">
+                <div class="flex flex-col items-center">
+                    <img src="./atom.png" height="100" width="100" alt="Astro Physics" class="mb-4">
+                    <h3 class="text-xl font-semibold">Astro Physics</h3>
+                    <p class="text-sm text-zinc-300 my-2">
+                        Covers fundamentals, design, construction, operation and programming of robots.
+                    </p>
+                    <button class="mt-auto bg-blue-600 px-4 py-2 rounded text-white">READ</button>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-700 p-4 rounded-lg">
+                <div class="flex flex-col items-center">
+                    <img src="./artificial-intelligence.png"  height="100" width="100"alt="Artificial Intelligence" class="mb-4">
+                    <h3 class="text-xl font-semibold">Artificial Intelligence</h3>
+                    <p class="text-sm text-zinc-300 my-2">
+                        Covers fundamentals, design, construction, operation and programming of robots.
+                    </p>
+                    <button class="mt-auto bg-blue-600 px-4 py-2 rounded text-white">READ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</html>
